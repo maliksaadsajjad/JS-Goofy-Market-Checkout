@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 15px;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+section {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  color: #166534;
+}
+
+.product-list {
+  background: #f0fdf4;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.product-list p {
+  margin: 8px 0;
+}
+
+label {
+  display: block;
+  margin: 15px 0 8px;
+  font-weight: bold;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  background: #15803d;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #166534;
+}
+
+#result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f0fdf4;
+  line-height: 1.8;
+  display: none;
+}
+
+#error {
+  margin-top: 15px;
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 750px;
+  max-height: 95vh;
+  overflow: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: modalPop 0.25s ease-out;
+}
+.ascii-art {
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: pre;
+  overflow-x: auto;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  margin: 15px auto;
+  color: #111827;
+}
+
+.modal-content h3 {
+  color: #dc2626;
+  margin: 15px 0 8px;
+}
+
+.modal-content p {
+  color: #475569;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  width: auto;
+  margin: 0;
+  padding: 0 8px;
+  background: transparent;
+  color: #64748b;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: transparent;
+  color: #dc2626;
+}
+
+.modal-ok {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@keyframes modalPop {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
